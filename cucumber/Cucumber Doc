@@ -11,3 +11,8 @@ https://github.com/cucumber/cucumber-eclipse/releases
 	cucumber-junit
  
  4. Create a feature file under src/test/resources 
+ 
+ 5.Test Site is:
+ http://parabank.parasoft.com/parabank/index.htm
+ User: tautester
+ Pass: Password
