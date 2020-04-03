@@ -9,10 +9,34 @@ https://github.com/cucumber/cucumber-eclipse/releases
 	selenium-java
 	junit
 	cucumber-junit
+	webdrivermanager
  
- 4. Create a feature file under src/test/resources 
+4. Create a feature file under src/test/resources 
+
+5. In the feature file create the feature and the scenario:
+
+Feature: Login Functionality
+  In order to do internet banking
+  As a valid Para Bank customer
+  I want to login successfully
+
+
+Scenario: Login Successful   
+  Given I am in the login page of the Para Bank Application
+  When I enter valid credentials
+  Then I should be taken to the Overview page 
+  
+6. Run the feature file with the Feature and copy the errors to the step definition class
+  
+7. Create under src/test/java an step definition class
+   Paste the code and click on Ctrl + shift + o
+   
+8. Run the feature file again and see that definitions have removed from the error
+
+9. To run the completed code run the feature file after completed the test.
  
- 5.Test Site is:
+9.Test Site is:
  http://parabank.parasoft.com/parabank/index.htm
  User: tautester
  Pass: Password
+ 
