@@ -1,0 +1,13 @@
+Cucumber Doc
+1. Add in Eclipse the cucumber-eclipse plugin from 
+https://github.com/cucumber/cucumber-eclipse/releases
+
+2. Go to eclipse  help -> install new software -> Add -> Give the location of the zip file
+
+3. Create a simple maven project and add the following dependencies:
+	cucumber-java
+	selenium-java
+	junit
+	cucumber-junit
+ 
+ 4. Create a feature file under src/test/resources 
