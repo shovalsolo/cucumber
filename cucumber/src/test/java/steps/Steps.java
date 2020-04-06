@@ -10,6 +10,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -34,7 +36,7 @@ public class Steps {
 		try {
 			Thread.sleep(3000);
 			driver.findElement(By.name("username")).sendKeys("tautester");
-			driver.findElement(By.name("password")).sendKeys("Password");
+			driver.findElement(By.name("password")).sendKeys("password");
 			driver.findElement(By.xpath("//input[@class='button']")).click();
 		} 
 		catch (InterruptedException e) {
@@ -46,8 +48,11 @@ public class Steps {
 	@Then("I should be taken to the Overview page")
 	public void i_should_be_taken_to_the_Overview_page() {
 		
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		
 		try {
 			Thread.sleep(5000);
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='rightPanel']/div/div/h1")));
 			driver.findElement(By.xpath("//*[@id='rightPanel']/div/div/h1")).isDisplayed();
 			driver.findElement(By.xpath("//a[contains(text(),'Log Out')]")).click();
 		} 
