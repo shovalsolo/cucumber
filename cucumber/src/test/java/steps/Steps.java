@@ -22,6 +22,7 @@ public class Steps {
 	
 	private WebDriver driver;
 	
+	
 	@Given("I am in the login page of the Para Bank Application")
 	public void i_am_in_the_login_page_of_the_Para_Bank_Application() {
 	    
@@ -35,8 +36,8 @@ public class Steps {
 	   
 		try {
 			Thread.sleep(3000);
-			driver.findElement(By.name("username")).sendKeys("tautester");
-			driver.findElement(By.name("password")).sendKeys("password");
+			driver.findElement(By.name("username")).sendKeys("qatest");
+			driver.findElement(By.name("password")).sendKeys("qatest1");
 			driver.findElement(By.xpath("//input[@class='button']")).click();
 		} 
 		catch (InterruptedException e) {
