@@ -22,7 +22,7 @@ public class Steps {
 	
 	private WebDriver driver;
 	
-	
+	@Given("I am in the login page")
 	@Given("I am in the login page of the Para Bank Application")
 	public void i_am_in_the_login_page_of_the_Para_Bank_Application() {
 	    
@@ -56,10 +56,14 @@ public class Steps {
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='rightPanel']/div/div/h1")));
 			driver.findElement(By.xpath("//*[@id='rightPanel']/div/div/h1")).isDisplayed();
 			driver.findElement(By.xpath("//a[contains(text(),'Log Out')]")).click();
+			driver.close();																	//Closing the browser
+			driver.quit();
 		} 
 		catch (InterruptedException e) {
 			System.out.println("Failed in validation");
 			e.printStackTrace();
+			driver.close();																	//Closing the browser
+			driver.quit();
 		}
 	}
 }
