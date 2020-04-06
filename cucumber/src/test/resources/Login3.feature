@@ -1,4 +1,4 @@
-# sending the Scenario from Feature
+# sending the Scenario from the DataTable sending it from when in the Scenario
 
 #Author: your.email@your.domain.com
 #Keywords Summary :
@@ -27,15 +27,10 @@ Feature: Login Functionality
   I want to login successfully
 
 @tag1
-Scenario: Login Successful 
+Scenario: Login Successful
   
-Given I am in the login page of the Para Bank Application
-When I enter valid credentials
-Then I should be taken to the Overview page
+Given I am in the login page of the Bank Application3
+When I enter the valid credentials3
+|qatest|qatest1|
+Then I should be taken to the Overview page screen3
 
-@tag2
-Scenario: Login Successful 
-  
-Given I am in the login page
-When I enter valid credentials
-Then I should be taken to the Overview page
