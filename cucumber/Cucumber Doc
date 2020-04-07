@@ -38,9 +38,15 @@ Scenario: Login Successful
 10.Test Site is:
  http://parabank.parasoft.com/parabank/index.htm
  User: tautester
- Pass: Password
+ Pass: Password or password
  
- 11. to run all the test cases go to folder C:\Users\Solomon\git\cucumber\cucumber>
- 12. And run the following command "mvn test"
+ User: qatest
+ pass: qatest1
  
+11. to run all the test cases go to folder C:\Users\Solomon\git\cucumber\cucumber>
+12. And run the following command "mvn test"
+ 
+13. To run and get reports run the following command "mvn verify"
+
+14. Reports are in C:\Users\Solomon\git\cucumber\cucumber\target\cucumber-html-reports\
  
