@@ -27,11 +27,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Steps6 extends BaseUtil{
+public class Steps5 extends BaseUtil{
 
 	private BaseUtil baseUtil;	
 
-	public Steps6(BaseUtil util) {
+	public Steps5(BaseUtil util) {
 		this.baseUtil = util;
 	}	
 
