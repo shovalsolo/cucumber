@@ -1,6 +1,7 @@
 /**
  * @author Solomon
  * This is the code to file "login.feature6" this will run the test twice , once for each user
+ * Using base class - BaseUtil to Injection Dependency userFullName
  * step definition class
  * To import all the missing imports click on Ctrl + shift + o
  * New user created "qatest"
