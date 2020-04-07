@@ -26,7 +26,7 @@ Feature: Login Functionality
   As a valid Para Bank customer
   I want to login successfully
 
-@tag1
+@tag5
 Scenario: Login Successful
   
 Given I am in the login page of the Bank Application Hooks

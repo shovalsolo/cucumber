@@ -35,8 +35,12 @@ Scenario: Login Successful
 
 9. To run the completed code run the feature file after completed the test.
  
-9.Test Site is:
+10.Test Site is:
  http://parabank.parasoft.com/parabank/index.htm
  User: tautester
  Pass: Password
+ 
+ 11. to run all the test cases go to folder C:\Users\Solomon\git\cucumber\cucumber>
+ 12. And run the following command "mvn test"
+ 
  
