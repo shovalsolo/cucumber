@@ -43,8 +43,9 @@ Scenario: Login Successful
  User: qatest
  pass: qatest1
  
-11. to run all the test cases go to folder C:\Users\Solomon\git\cucumber\cucumber>
-12. And run the following command "mvn test"
+11. To run all the test cases go to folder C:\Users\Solomon\git\cucumber\cucumber>
+
+12. Run the following command "mvn test"
  
 13. To run and get reports run the following command "mvn verify"
 
