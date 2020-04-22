@@ -31,6 +31,6 @@ Scenario: Login Successful
   
 Given I am in the login page of the Bank Application3
 When I enter the valid credentials3
-|qatest|qatest1|
+|Admin|admin123|
 Then I should be taken to the Overview page screen3
 

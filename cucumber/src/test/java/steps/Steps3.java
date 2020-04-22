@@ -33,7 +33,7 @@ public class Steps3 {
 	    
 		WebDriverManager.chromedriver().setup();							//Using WebDriverManager after adding to POM.xml
 		driver = new ChromeDriver();
-		driver.get("http://parabank.parasoft.com/parabank/index.htm");
+		driver.get("https://opensource-demo.orangehrmlive.com/");
 	}
 
 	@When("I enter the valid credentials3")
@@ -43,8 +43,8 @@ public class Steps3 {
 	   
 		try {
 			Thread.sleep(3000);
-			driver.findElement(By.name("username")).sendKeys(loginForm.get(0));
-			driver.findElement(By.name("password")).sendKeys(loginForm.get(1));
+			driver.findElement(By.name("txtUsername")).sendKeys(loginForm.get(0));
+			driver.findElement(By.name("txtPassword")).sendKeys(loginForm.get(1));
 			driver.findElement(By.xpath("//input[@class='button']")).click();
 		} 
 		catch (InterruptedException e) {
@@ -60,9 +60,11 @@ public class Steps3 {
 		
 		try {
 			Thread.sleep(5000);
-			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='rightPanel']/div/div/h1")));
-			driver.findElement(By.xpath("//*[@id='rightPanel']/div/div/h1")).isDisplayed();
-			driver.findElement(By.xpath("//a[contains(text(),'Log Out')]")).click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//h1[contains(text(),'Dashboard')]")));
+			driver.findElement(By.xpath("//h1[contains(text(),'Dashboard')]")).isDisplayed();
+			driver.findElement(By.xpath("//a[@id='welcome']")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
 			driver.close();																	//Closing the browser
 			driver.quit();
 		} 
